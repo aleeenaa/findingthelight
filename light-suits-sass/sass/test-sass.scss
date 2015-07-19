@@ -1,0 +1,64 @@
+$stripes: 75;
+$stripeWidth: 0.1%;
+$lapDuration: 8s;
+$anim-times: ($lapDuration, ($lapDuration * 2));
+$leftSpace: ( 50% / $stripes );
+
+html body {
+	overflow: hidden;
+	background: #252625;
+}
+
+.anim {
+	margin: 0;
+	position: absolute;
+	top: 0; bottom: 0; right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.anim1 {
+	@extend .anim;
+	left: 0;
+
+	i {
+		animation-name: light-suits-0;
+		animation-duration: $lapDuration;
+		animation-timing-function: ease;
+	}
+}
+
+.anim2 {
+	@extend .anim;
+	left: 50%;
+	i {
+		animation-name: light-suits-1;
+		animation-duration: $lapDuration;
+		animation-timing-function: ease;	}
+}
+
+i {
+	display: inline-block;
+	position: absolute;
+	width: $stripeWidth;
+	height: 0;
+	background: #454545;
+}
+
+@for $i from 1 to 75 {
+	i:nth-child(#{$i}) {
+		left: ($i) * ($leftSpace);
+	}
+}
+
+@for $i from 0 to length($anim-times) {
+	animation-delay: (($i) * ($lapDuration / $stripes) * (0.2));
+	@keyframes light-suits-#{$i} {
+		0% { height: 0; }
+		25% { height: 100%; }
+		50% { height: 100%; }
+		75% { height: 100%; }
+		100% { height: 100%; }
+	}
+}
