@@ -1,58 +1,528 @@
-/*
-Error: Properties are only allowed within rules, directives, mixin includes, or other properties.
-        on line 56 of /Applications/MAMP/htdocs/findingthelight/light-suits-sass/sass/test-sass.scss
+/* line 7, ../light-suits-sass/sass/test-sass.scss */
+html body {
+  overflow: hidden;
+  background: #252625;
+}
 
-51: 		left: ($i) * ($leftSpace);
-52: 	}
-53: }
-54: 
-55: @for $i from 0 to length($anim-times) {
-56: 	animation-delay: (($i) * ($lapDuration / $stripes) * (0.2));
-57: 	@keyframes light-suits-#{$i} {
-58: 		0% { height: 0; }
-59: 		25% { height: 100%; }
-60: 		50% { height: 100%; }
-61: 		75% { height: 100%; }
+/* line 12, ../light-suits-sass/sass/test-sass.scss */
+.anim, .anim1, .anim2 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
 
-Backtrace:
-/Applications/MAMP/htdocs/findingthelight/light-suits-sass/sass/test-sass.scss:56
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:13:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:38:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:49:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:57:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:24:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:35:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/engine.rb:278:in `render'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Properties are only allowed within rules, directives, mixin includes, or other properties.\A         on line 56 of /Applications/MAMP/htdocs/findingthelight/light-suits-sass/sass/test-sass.scss\A \A 51: 		left: ($i) * ($leftSpace);\A 52: 	}\A 53: }\A 54: \A 55: @for $i from 0 to length($anim-times) {\A 56: 	animation-delay: (($i) * ($lapDuration / $stripes) * (0.2));\A 57: 	@keyframes light-suits-#{$i} {\A 58: 		0% { height: 0; }\A 59: 		25% { height: 100%; }\A 60: 		50% { height: 100%; }\A 61: 		75% { height: 100%; }"; }
+/* line 21, ../light-suits-sass/sass/test-sass.scss */
+.anim1 {
+  left: 0;
+}
+/* line 25, ../light-suits-sass/sass/test-sass.scss */
+.anim1 i {
+  animation-name: light-suits-0;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+}
+
+/* line 33, ../light-suits-sass/sass/test-sass.scss */
+.anim2 {
+  left: 50%;
+}
+/* line 36, ../light-suits-sass/sass/test-sass.scss */
+.anim2 i {
+  animation-name: light-suits-1;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+}
+
+/* line 42, ../light-suits-sass/sass/test-sass.scss */
+i {
+  display: inline-block;
+  position: absolute;
+  width: 0.1%;
+  height: 0;
+  background: #454545;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(1) {
+  left: 1.33333%;
+  animation-delay: 0.02133s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(2) {
+  left: 2.66667%;
+  animation-delay: 0.04267s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(3) {
+  left: 4%;
+  animation-delay: 0.064s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(4) {
+  left: 5.33333%;
+  animation-delay: 0.08533s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(5) {
+  left: 6.66667%;
+  animation-delay: 0.10667s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(6) {
+  left: 8%;
+  animation-delay: 0.128s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(7) {
+  left: 9.33333%;
+  animation-delay: 0.14933s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(8) {
+  left: 10.66667%;
+  animation-delay: 0.17067s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(9) {
+  left: 12%;
+  animation-delay: 0.192s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(10) {
+  left: 13.33333%;
+  animation-delay: 0.21333s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(11) {
+  left: 14.66667%;
+  animation-delay: 0.23467s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(12) {
+  left: 16%;
+  animation-delay: 0.256s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(13) {
+  left: 17.33333%;
+  animation-delay: 0.27733s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(14) {
+  left: 18.66667%;
+  animation-delay: 0.29867s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(15) {
+  left: 20%;
+  animation-delay: 0.32s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(16) {
+  left: 21.33333%;
+  animation-delay: 0.34133s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(17) {
+  left: 22.66667%;
+  animation-delay: 0.36267s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(18) {
+  left: 24%;
+  animation-delay: 0.384s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(19) {
+  left: 25.33333%;
+  animation-delay: 0.40533s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(20) {
+  left: 26.66667%;
+  animation-delay: 0.42667s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(21) {
+  left: 28%;
+  animation-delay: 0.448s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(22) {
+  left: 29.33333%;
+  animation-delay: 0.46933s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(23) {
+  left: 30.66667%;
+  animation-delay: 0.49067s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(24) {
+  left: 32%;
+  animation-delay: 0.512s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(25) {
+  left: 33.33333%;
+  animation-delay: 0.53333s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(26) {
+  left: 34.66667%;
+  animation-delay: 0.55467s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(27) {
+  left: 36%;
+  animation-delay: 0.576s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(28) {
+  left: 37.33333%;
+  animation-delay: 0.59733s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(29) {
+  left: 38.66667%;
+  animation-delay: 0.61867s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(30) {
+  left: 40%;
+  animation-delay: 0.64s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(31) {
+  left: 41.33333%;
+  animation-delay: 0.66133s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(32) {
+  left: 42.66667%;
+  animation-delay: 0.68267s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(33) {
+  left: 44%;
+  animation-delay: 0.704s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(34) {
+  left: 45.33333%;
+  animation-delay: 0.72533s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(35) {
+  left: 46.66667%;
+  animation-delay: 0.74667s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(36) {
+  left: 48%;
+  animation-delay: 0.768s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(37) {
+  left: 49.33333%;
+  animation-delay: 0.78933s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(38) {
+  left: 50.66667%;
+  animation-delay: 0.81067s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(39) {
+  left: 52%;
+  animation-delay: 0.832s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(40) {
+  left: 53.33333%;
+  animation-delay: 0.85333s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(41) {
+  left: 54.66667%;
+  animation-delay: 0.87467s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(42) {
+  left: 56%;
+  animation-delay: 0.896s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(43) {
+  left: 57.33333%;
+  animation-delay: 0.91733s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(44) {
+  left: 58.66667%;
+  animation-delay: 0.93867s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(45) {
+  left: 60%;
+  animation-delay: 0.96s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(46) {
+  left: 61.33333%;
+  animation-delay: 0.98133s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(47) {
+  left: 62.66667%;
+  animation-delay: 1.00267s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(48) {
+  left: 64%;
+  animation-delay: 1.024s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(49) {
+  left: 65.33333%;
+  animation-delay: 1.04533s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(50) {
+  left: 66.66667%;
+  animation-delay: 1.06667s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(51) {
+  left: 68%;
+  animation-delay: 1.088s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(52) {
+  left: 69.33333%;
+  animation-delay: 1.10933s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(53) {
+  left: 70.66667%;
+  animation-delay: 1.13067s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(54) {
+  left: 72%;
+  animation-delay: 1.152s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(55) {
+  left: 73.33333%;
+  animation-delay: 1.17333s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(56) {
+  left: 74.66667%;
+  animation-delay: 1.19467s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(57) {
+  left: 76%;
+  animation-delay: 1.216s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(58) {
+  left: 77.33333%;
+  animation-delay: 1.23733s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(59) {
+  left: 78.66667%;
+  animation-delay: 1.25867s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(60) {
+  left: 80%;
+  animation-delay: 1.28s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(61) {
+  left: 81.33333%;
+  animation-delay: 1.30133s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(62) {
+  left: 82.66667%;
+  animation-delay: 1.32267s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(63) {
+  left: 84%;
+  animation-delay: 1.344s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(64) {
+  left: 85.33333%;
+  animation-delay: 1.36533s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(65) {
+  left: 86.66667%;
+  animation-delay: 1.38667s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(66) {
+  left: 88%;
+  animation-delay: 1.408s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(67) {
+  left: 89.33333%;
+  animation-delay: 1.42933s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(68) {
+  left: 90.66667%;
+  animation-delay: 1.45067s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(69) {
+  left: 92%;
+  animation-delay: 1.472s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(70) {
+  left: 93.33333%;
+  animation-delay: 1.49333s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(71) {
+  left: 94.66667%;
+  animation-delay: 1.51467s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(72) {
+  left: 96%;
+  animation-delay: 1.536s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(73) {
+  left: 97.33333%;
+  animation-delay: 1.55733s;
+}
+
+/* line 51, ../light-suits-sass/sass/test-sass.scss */
+i:nth-child(74) {
+  left: 98.66667%;
+  animation-delay: 1.57867s;
+}
+
+@keyframes light-suits-0 {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 100%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes light-suits-1 {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 100%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 100%;
+  }
+}
