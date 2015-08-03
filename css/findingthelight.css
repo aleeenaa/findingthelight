@@ -12,6 +12,7 @@
 body {
 	font-family: "Shift", "Calibri", sans-serif;
 	text-align: justify;
+  color: white;
 }
 
 #container {
@@ -20,6 +21,7 @@ body {
   z-index: 3;
   width: 100%;
   height: auto;
+  left: 0;
   margin-top: 5em;
   margin-bottom: 5em;
   background: white;
@@ -35,6 +37,7 @@ nav {
 	position: relative;
 	width: 75%;
 	margin: 0 auto;
+  display: hidden;
 }
 
 nav ul {
@@ -58,16 +61,91 @@ nav ul li {
 	color: grey;
 }
 
+h2 {
+  float: right;
+  padding-right: 6em;
+  margin-top: 7em;
+  color: whitesmoke;
+  font-weight: inherit;
+}
+
+#lightLogo {
+  width: 141px;
+  height: 102px;
+  float: left;
+  margin-left: 17em; 
+}
+
 #main {
+  background: url(../assets/samples/images.jpeg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+#main, .panels section {
 	position: relative;
-	width: 60%;
-	margin: 3em auto;
+	width: 100%;
+  padding: 3em 5em;
+	/*margin: 3em auto;*/
 }
 
-#main article {
+#firstPanel {
+  background: url(../assets/samples/swatch-102.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+#secondPanel {
+  background: url(../assets/samples/images.jpeg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+#thirdPanel {
+  background: url(../assets/samples/swatch-102.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+#fourthPanel {
+  background: url(../assets/samples/images.jpeg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+#fifthPanel {
+  background: url(../assets/samples/swatch-102.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+#sixthPanel {
+  background: url(../assets/samples/images.jpeg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+.panels section p {
 	padding: 1em 5em;
-}
-
-article h2 {
-	text-align: center;
 }
