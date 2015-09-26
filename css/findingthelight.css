@@ -2,7 +2,7 @@
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;
-    /* Firefox, other Gecko */
+     /*Firefox, other Gecko*/
     box-sizing: border-box;
     /* Opera/IE 8+ */
     /*border: 1px solid blue;*/
@@ -12,22 +12,22 @@
 body {
 	font-family: "Helvetica Neue", Helvetica , Arial , sans-serif;
 	text-align: justify;
-  color: white;
+    color: white;
 }
 
 #container {
 	position: absolute;
-  display: block;
-  z-index: 3;
-  width: 100%;
-  height: auto;
-  left: 0;
-  margin-top: 5em;
-  margin-bottom: 5em;
-  background: white;
+    display: block;
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    left: 0;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background: white;
 }
 
-header {
+/*header {
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -37,12 +37,12 @@ nav {
 	position: relative;
 	width: 75%;
 	margin: 0 auto;
-  display: hidden;
+    display: hidden;
 }
 
 nav ul {
 	display: flex;
-  flex-direction: row;
+    flex-direction: row;
 	position: relative;
 	width: 75%;
 	margin: auto;
@@ -59,137 +59,277 @@ nav ul li {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: grey;
-}
+}*/
 
 #placeholder {
-  width: 291px;
-  height: auto;
-  margin: 1em auto;
-  overflow: auto;
+    width: 291px;
+    height: auto;
+    margin: 1em auto;
+    overflow: auto;
 }
 
 #lightLogo {
-  width: 291px;
-  height: auto;
-  /*
-  float: left;
-  margin-left: 17em;*/ 
+    width: 291px;
+    height: auto;
+    /*
+    float: left;
+    margin-left: 17em;*/ 
+}
+
+#fbLogo {
+    cursor: pointer;
+    float: right;
+    height: 5em;
+    width: auto;
 }
 
 h2 {
-  font-family: cursive;
-  font-size: 28px;
-  float: right;
-  padding: 5em 2em 0 0;
-  color: whitesmoke;
-  font-weight: inherit;
+    font-family: cursive;
+    font-size: 28px;
+    /* float: right; */
+    width: 24%;
+    /* padding: 5em 2em 0 0; */
+    color: whitesmoke;
+    font-weight: inherit;
+    margin: 1em auto;
 }
 
 #main {
-  background: url(../assets/samples/images.jpeg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: auto;
-  position: relative;
-  width: 100%;
-  padding: 8em 5em 1em;
+    background: url(../assets/IMG_2381.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    padding: 8em 5em 1em;
+    margin-bottom: -2em;
 }
 
-.panels section {
-  position: relative;
-  width: 100%;
-  padding: 3em 1em;
-  /*margin: 3em auto;*/
+.panel {
+    position: relative;
+    width: 100%;
 }
 
-.panels section p {
-	/*padding: 1em 5em;*/
-  font-size: 33px;
-  line-height: 55px;
-  font-weight: 100;
+.innerContainer {
+    position: relative;
+    height: 100%;
+    width: 84em;
+    margin: 2em auto;
+}
+
+.innerContainer p {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    font-size: 31px;
+    line-height: 44px;
+    font-weight: 100;
 }
 
 .button {
-  background-color: rgba(0,256,256,0.1);
-  color: white;
-  border: solid 1px white;
-  float: right;
-  margin: 16em -24em 0em 0em;
-  padding: 1em 4em;
-  font-size: 27px;
-  font-weight: 100;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0,256,256,0.1);
+    color: white;
+    border: solid 1px white;
+    padding: 14px 2em;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+    top: -5em;
+    width: 11em;
+    left: 40em;
+    display: inline-block;
+    text-decoration: none;
 }
 
 /*TODO: Change text colour and border colour when hovered and clicked.*/
-.button :hover {
-  color: #FFCC66;
+.button:hover {
+    border: solid 1px #FFCC66;
+    color: #FFCC66;
 }
 
 #firstPanel {
-  background: url(../assets/samples/swatch-102.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 39em;
+    background: url(../assets/samples/swatch-102.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 39em;
+    position: relative;
+    width: 100%;
+    /*margin: 3em auto;*/
 }
 
 #panelOneImg {
-  width: 26em;
-  height: auto;
-  margin: 3em 0 3em 19em;
+    display: inline-block;
+    position: relative;
+    width: 19em;
+    height: auto;
+    margin: 9em 7em 0 5em;
 }
 
 #firstPanel p {
-  float: right;
-  width: 20em;
-  height: auto;
-  margin: 2em 10em 0 0;
+    width: 27em;
+    top: -4em;
+    padding: 1em 2em;
 }
 
 #secondPanel {
-  background: url(../assets/samples/images.jpeg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: auto;
+    /*background: url(../assets/samples/images.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    background-attachment: fixed, fixed, fixed;
+    background-image: url(../assets/IMG_4521.JPG), url(../assets/IMG_4525.JPG), url(../assets/IMG_6843.jpeg);
+    background-position: -13em 0, center, right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto 100%, auto 100%, auto 100%;
+    overflow: auto;
+}
+
+#secondPanel .innerContainer {
+    width: 65%;
+    margin: 2em auto;
+}
+
+#secondPanel p {
+    margin: 6em 0;
+    padding: 1em;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
 }
 
 #thirdPanel {
-  background: url(../assets/samples/swatch-102.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: auto;
+    background-color: #907338;
+    background-attachment: fixed, fixed, scroll;
+    background-image: url(../assets/patterns/gridlines.png), url(../assets/patterns/noise.png), url(../assets/patterns/contours@2x.png);
+    background-position: 0 0, center, center;
+    background-repeat: repeat;
+    background-size: auto;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    overflow: auto;
+    /*-webkit-animation: twotone 30s infinite; /* Chrome, Safari, Opera */*/
+    /*animation: twotone 30s infinite;*/
+}
+
+#thirdPanel p {
+    padding: 1em;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
+/* Chrome, Safari, Opera */
+/*@-webkit-keyframes twotone {
+    30% {background-color: #47391C;}
+    60% {background-color: #000046;}
+}*/
+
+/* Standard syntax */
+/*@keyframes twotone {
+    30% {background-color: #47391C;}
+    60% {background-color: #000046;}
+}*/
+
+.panelThreeImgs {
+    display: inline-block;
+    position: relative;
+    width: 19em;
+    height: auto;
+    margin: 7em 0em 3em;
 }
 
 #fourthPanel {
-  background: url(../assets/samples/images.jpeg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: auto;
+    background: url(../assets/IMG_6843.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: auto;
 }
 
-#fifthPanel {
-  background: url(../assets/samples/swatch-102.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: auto;
+#fourthPanel p {
+    padding: 1em;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    width: 28%;
+    margin: 1em;
+    /* height: 21em; */
+    position: relative;
+    vertical-align: text-top;
 }
 
-#sixthPanel {
-  background: url(../assets/samples/images.jpeg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: auto;
+#fourpt1 {
+    width: 89%;
+    margin: auto;
 }
+
+.panelFourImgs {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: 32em;
+    margin: 7em 4em 3em;
+    padding: 1em;
+    border: dashed 5px rgba(255,255,255,0.6);
+}
+
+footer {
+    background-color: rgb(158, 158, 158);
+    height: 43px;
+    display: block;
+}
+
+#author {
+    float: right;
+    font-style: bold;
+    color: #5a5a5a;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#author:hover {
+    color: #FFCC66;
+}
+
+/*@media all and (max-width: 1366px) {
+    .button {
+        background-color: rgba(0,256,256,0.1);
+        color: white;
+        border: solid 1px white;
+        float: right;
+        margin: 16em -21em 0em 0em;
+        padding: 16px 2em;
+        font-size: 23px;
+        font-weight: 100;
+    }
+
+    #panelOneImg {
+        width: 19em;
+        height: auto;
+        margin: 6em 0 3em 7em;
+    }
+
+    #firstPanel .innerContainer p {
+        float: right;
+        width: 20em;
+        height: auto;
+        margin: 4em 7em 0 0;
+    }
+
+    #panels div p {
+        padding: 1em 5em; 
+        font-size: 25px;
+        line-height: 45px;
+        font-weight: 100;
+    } 
+}*/
