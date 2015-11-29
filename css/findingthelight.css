@@ -10,9 +10,10 @@
 }
 
 body {
-	font-family: "Helvetica Neue", Helvetica , Arial , sans-serif;
-	text-align: justify;
+    font-family: 'Roboto', Helvetica , Arial , sans-serif;
+    text-align: justify;
     color: white;
+    font-weight: 100;
 }
 
 #container {
@@ -22,7 +23,6 @@ body {
     width: 100%;
     height: auto;
     left: 0;
-    margin-top: 5em;
     margin-bottom: 5em;
     background: white;
 }
@@ -61,30 +61,42 @@ nav ul li {
 	color: grey;
 }*/
 
+#myCarousel {
+    width: 100%;
+    height: 40em;
+    overflow: hidden;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
 #placeholder {
-    width: 291px;
+    width: 200px;
     height: auto;
     margin: 1em auto;
     overflow: auto;
 }
 
 #lightLogo {
-    width: 291px;
+    width: 200px;
     height: auto;
     /*
     float: left;
-    margin-left: 17em;*/ 
+    margin-left: 17em;*/
 }
 
 #fbLogo {
     cursor: pointer;
     float: right;
-    height: 5em;
+    height: 3em;
     width: auto;
 }
 
 h2 {
-    font-family: cursive;
+    font-family: 'Great Vibes', Georgia;
     font-size: 28px;
     /* float: right; */
     width: 24%;
@@ -92,19 +104,14 @@ h2 {
     color: whitesmoke;
     font-weight: inherit;
     margin: 1em auto;
+    text-align: center;
 }
 
-#main {
-    background: url(../assets/IMG_2381.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+#header {
     overflow: auto;
     position: relative;
     width: 100%;
-    padding: 8em 5em 1em;
-    margin-bottom: -2em;
+    z-index: 3;
 }
 
 .panel {
@@ -327,9 +334,9 @@ footer {
     }
 
     #panels div p {
-        padding: 1em 5em; 
+        padding: 1em 5em;
         font-size: 25px;
         line-height: 45px;
         font-weight: 100;
-    } 
+    }
 }*/
