@@ -17,23 +17,16 @@ body {
 }
 
 #container {
-	position: absolute;
+    position: absolute;
     display: block;
     z-index: 3;
     width: 100%;
     height: auto;
     left: 0;
-    margin-bottom: 5em;
     background: white;
 }
 
-/*header {
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-
-nav {
+/*nav {
 	position: relative;
 	width: 75%;
 	margin: 0 auto;
@@ -67,10 +60,10 @@ nav ul li {
     overflow: hidden;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousel-inner > .item > img {
     width: 100%;
     margin: auto;
+    height: 40em;
 }
 
 #placeholder {
@@ -90,15 +83,17 @@ nav ul li {
 
 #fbLogo {
     cursor: pointer;
-    float: right;
+    /* float: right; */
     height: 3em;
     width: auto;
+    position: absolute;
+    top: 0em;
+    left: 79em;
 }
 
 h2 {
     font-family: 'Great Vibes', Georgia;
     font-size: 28px;
-    /* float: right; */
     width: 24%;
     /* padding: 5em 2em 0 0; */
     color: whitesmoke;
@@ -108,7 +103,7 @@ h2 {
 }
 
 #header {
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     width: 100%;
     z-index: 3;
@@ -117,37 +112,29 @@ h2 {
 .panel {
     position: relative;
     width: 100%;
+    border: none;
 }
 
-.innerContainer {
-    position: relative;
-    height: 100%;
-    width: 84em;
-    margin: 2em auto;
-}
-
-.innerContainer p {
+.panel p {
     display: inline-block;
-    height: auto;
     position: relative;
-    font-size: 31px;
-    line-height: 44px;
-    font-weight: 100;
+    width: 28em;
+    font-size: 18px;
 }
 
 .button {
     cursor: pointer;
     position: relative;
-    background-color: rgba(0,256,256,0.1);
+    background-color: rgba(37, 100, 218, 0.59);
     color: white;
     border: solid 1px white;
-    padding: 14px 2em;
-    font-size: 25px;
+    padding: 11px 0;
+    font-size: 19px;
     font-weight: 100;
     text-align: center;
-    top: -5em;
+    top: -4em;
     width: 11em;
-    left: 40em;
+    left: 33em;
     display: inline-block;
     text-decoration: none;
 }
@@ -158,24 +145,19 @@ h2 {
     color: #FFCC66;
 }
 
-#firstPanel {
-    background: url(../assets/samples/swatch-102.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 39em;
+#panelOne {
     position: relative;
-    width: 100%;
-    /*margin: 3em auto;*/
+    top: -33em;
+    width: 59em;
+    height: 22em;
+    margin: 1em auto;
 }
 
 #panelOneImg {
     display: inline-block;
     position: relative;
-    width: 19em;
+    width: 16em;
     height: auto;
-    margin: 9em 7em 0 5em;
 }
 
 #firstPanel p {
