@@ -84,10 +84,10 @@ nav ul li {
 #fbLogo {
     cursor: pointer;
     /* float: right; */
-    height: 3em;
+    height: 36px;
     width: auto;
     position: absolute;
-    top: 0em;
+    top: 8px;
     left: 79em;
 }
 
@@ -120,6 +120,10 @@ h2 {
     position: relative;
     width: 28em;
     font-size: 18px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 15px;
+    line-height: 30px;
 }
 
 .button {
@@ -134,7 +138,7 @@ h2 {
     text-align: center;
     top: -4em;
     width: 11em;
-    left: 33em;
+    left: 32em;
     display: inline-block;
     text-decoration: none;
 }
